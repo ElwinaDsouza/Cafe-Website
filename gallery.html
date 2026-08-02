@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Space & Gallery | Cafe Walnut</title>
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="Cafestyle.css">
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header id="main-nav" class="nav-horizontal">
+    <div class="logo">
+      <span class="material-symbols-outlined">local_cafe</span> Cafe Walnut
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button id="theme-toggle" class="btn-toggle">
+        <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+        <span id="theme-text">Dark</span>
+      </button>
+      <button id="nav-orient-toggle" class="btn-toggle">
+        <span class="material-symbols-outlined">dock_to_left</span>
+        <span>Side Dock</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Cafe Space</h1>
+    <p class="page-subtitle">Designed for quiet mornings, creative work, and warm conversations.</p>
+
+    <!-- Gallery Grid -->
+    <div class="space-gallery">
+
+      <div class="gallery-item skeleton" data-category="lounge">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Minimalist Seating Nook">
+        <div class="gallery-overlay">
+          <h3>Minimalist Lounge</h3>
+          <p>Quiet seating designed for reading and focused work.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item skeleton" data-category="bar">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Artisanal Espresso Bar">
+        <div class="gallery-overlay">
+          <h3>Espresso Bar</h3>
+          <p>Machine setup in solid English Walnut.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item skeleton" data-category="lounge">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Main Seating Area">
+        <div class="gallery-overlay">
+          <h3>Sunlit Main Room</h3>
+          <p>Warm ambient lighting with soft toned walls.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item skeleton" data-category="patio">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Garden Terrace">
+        <div class="gallery-overlay">
+          <h3>Garden Terrace</h3>
+          <p>Outdoor patio surrounded by local flora and warm afternoon shade.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item skeleton" data-category="bar">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Slow Bar Pour Over Station">
+        <div class="gallery-overlay">
+          <h3>Slow Coffee Bar</h3>
+          <p>Dedicated pour-over and siphon brewing counter.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item skeleton" data-category="patio">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Courtyard Seating">
+        <div class="gallery-overlay">
+          <h3>Courtyard Corner</h3>
+          <p>Pet-friendly seating.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="cafeScript.js"></script>
+</body>
+</html>

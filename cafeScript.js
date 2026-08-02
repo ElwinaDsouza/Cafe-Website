@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const categoryButtons = document.querySelectorAll('.cat-btn');
-  const menuCards = document.querySelectorAll('.menu-grid .card');
+  const menuCards = document.querySelectorAll('.menu-grid .card,.space-gallery .gallery-item');
 
   categoryButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       menuCards.forEach(card => {
         if (filter === 'all' || card.dataset.category === filter) {
-          card.style.display = '';
+          item.style.display = '';
         } else {
-          card.style.display = 'none';
+          item.style.display = 'none';
         }
       });
     });
